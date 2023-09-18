@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-let products = ref([
+const products = ref([
   {
     id: 0,
     title: "Title 1",
