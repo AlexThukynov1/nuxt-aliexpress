@@ -31,12 +31,12 @@
                 <div class="bg-[#feeeef] rounded-lg p-4 mt-4">
                     <div class="text-red-500 font-bold">Welcome deal applicable on 1 item only</div>
                     <div class="bg-white rounded-lg p-4 mt-4">
-                        <div v-for="product in products" :key="product">
-                            <!-- <CatrItem/
+                        <div v-for="(product, index) in products" :key="index">
+                            <CatrItem
                                 :product="product"
                                 :selectedArray="selectedArray"
                                 @selectedRadio="SelectedRadioFunc"
-                            > -->
+                            />
                         </div>
                     </div>
                 </div>
